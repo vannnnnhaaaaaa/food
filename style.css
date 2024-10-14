@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 /* main menu */
+
 .nav {
     width: 80%;
     margin: auto;
@@ -26,8 +27,9 @@ a {
     align-items: center;
 
 }
-.mainmenu .page i {
+.page i {
     font-size: 13px;
+   
 }
 .mainmenu .brand {
     font-size: 24px;
@@ -39,9 +41,24 @@ a {
 .page li a {
     color: white;
 }
+.page li::before {
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px ;
+    background-color: #f01543;
+    bottom: 1px;
+    left: 0;
+    transition: width 0.6s ease; 
+}
+.page li:hover::before {
+    width: 100%;
+}
+
 .page li {
     margin: 0px 10px;
-  
+    position: relative;
+    transition: all 0.5s ease;
 }
 .mainmenu input[type="text"] {
     padding: 13px;
@@ -69,16 +86,153 @@ a {
    background-color: #122833;
    align-items: center;
     height: 50px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.lovefood:hover {
+    background-color: #f01543;
+}
+.lovefood:hover span {
+    background-color: white;
+    color: #f01543;
+}
+.cart:hover span {
+    background-color: white;
+    color: #f01543;
 }
 
+.cart:hover {
+    background-color: #f01543;
+}
+.cart span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 13px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #f01543;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease;
+}
+.lovefood span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 13px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #f01543;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease;
+}
 #iconlove_cart {
     display: flex;
 }
 .login, .signup {
-    padding: 15px 30px;
+    padding: 11px 24px;
     border-radius: 10px;
     border: 1px solid white;
     background-color: #0e2b36;
+     transition: all 0.5s ease;
+     cursor: pointer;
+}
+/* -------------- -----------------------------------------------------------*/
+.login:hover {
+    background-color: white;
+    color: #f01543;
+}
+.delivery {
+    background-color: #f01543;
+    color: white;
+}
+.signup:hover {
+    background-color: #f01543;
+}
+.delivery:hover {
+    background-color: white;
+    color:#f01543;
+}
+.pickup:hover {
+    background-color: #f01543;
+    color: white;
+}
+.inrestaurant:hover {
+    background-color: #f01543;
+    color: white;
+}
+.pickup:hover span{
+    animation: MoveScaleUpInitial 0.2s forwards, MoveScaleUpEnd 0.2s forwards 0.2s;
+}
+.inrestaurant:hover span{
+    animation: MoveScaleUpInitial 0.2s forwards, MoveScaleUpEnd 0.2s forwards 0.2s;
+}
+.delivery:hover span {
+    animation: MoveScaleUpInitial 0.2s forwards, MoveScaleUpEnd 0.2s forwards 0.2s;
+}
+.login:hover span {
+    animation: MoveScaleUpInitial 0.2s forwards, MoveScaleUpEnd 0.2s forwards 0.2s;
+}
+.signup:hover span {
+    animation: MoveScaleUpInitial 0.2s forwards, MoveScaleUpEnd 0.2s forwards 0.2s;
+}
+
+.delivery span {
+    position: relative;
+    z-index: 10; /* Đặt span trên cùng */
+}
+.pickup span {
+    position: relative;
+    z-index: 10; /* Đặt span trên cùng */
+}
+.inrestaurant span {
+    position: relative;
+    z-index: 10; /* Đặt span trên cùng */
+}
+.login span {
+    display: block;
+    position: relative;
+    z-index: 10; /* Đặt span trên cùng */
+}
+.signup span {
+    display: block;
+    position: relative;
+    z-index: 10; /* Đặt span trên cùng */
+}
+
+
+@keyframes MoveScaleUpInitial {
+    to {
+        transform: translate3d(0, -105%, 0) scale3d(1, 2, 1);
+        opacity: 0; /* Làm cho chữ biến mất */
+    }
+}
+
+@keyframes MoveScaleUpEnd {
+    from {
+        transform: translate3d(0, 100%, 0) scale3d(1, 2, 1);
+        opacity: 0; /* Làm cho chữ xuất hiện từ dưới lên */
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+/* -------------- ------------------------------------------------------------------------*/
+.signup:hover {
+    background-color: #f01543;
+}
+.button--calypso:hover span {
+    animation: MoveScaleUpInitial 0.3s forwards, MoveScaleUpEnd 0.3s forwards 0.3s;
+}
+
+.login {
+    background-color: #f01543;
+    transition: all 0.5s ease;
 }
 .main {
     height: 1000px;
@@ -111,9 +265,10 @@ a {
     
 }
 .delivery , .pickup , .inrestaurant{
-    padding: 13px;
+    padding: 17px;
     border: 1px solid #f01543 ;
     border-radius: 10px;
+    cursor: pointer;
 }
 .content i {
     font-size: 30px;
@@ -140,21 +295,50 @@ a {
     display: flex;
     position: relative;
     border-radius: 20px;
+    cursor: pointer;
+    
+}
+.food::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #f01543;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease;
+    border-radius:20px ;
+    
+}
+
+
+.food:hover  {
+    color: white;
+}
+.food:hover i {
+    background-color: #d81440;
+}
+.food:hover::before {
+    width: 100%;
 }
 #quantity {
     position: absolute;
     top : 50px;
     left: 100px;
+    font-size: 20px;
 }
 .food p {
-    white-space: nowrap;
-    overflow: hidden;
+    z-index: 2;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
     margin-left: 17px;
     margin-top:5px;
-    font-size: 25px;
+    font-size: 28px;
 
 }
 .food i {
+    z-index: 2;
+    
     font-size: 30px;
     padding: 10px;
     background-color: white;
@@ -401,3 +585,8 @@ a {
     display: block;
     background-color: #000929;
 }
+/* -------------------------------- */
+
+
+
+
