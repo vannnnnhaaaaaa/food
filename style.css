@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/* main menu */
+.nav {
+    width: 80%;
+    margin: auto;
+    
+}
+.mainmenu {
+   color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+}
+.mainmenu .page i {
+    font-size: 13px;
+}
+.mainmenu .brand {
+    font-size: 24px;
+}
+.page {
+    display: flex;
+
+}
+.page li a {
+    color: white;
+}
+.page li {
+    margin: 0px 10px;
+  
+}
+.mainmenu input[type="text"] {
+    padding: 13px;
+    border-radius: 7px;
+    background-color: #152a35;
+    border: none;
+    color: white;
+}
+.search {
+    position: relative;
+}
+.search i {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    color: white;
+}
+.lovefood , .cart{
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid 1px white;
+    width: 50px;
+    display: flex;
+   justify-content: center;
+   background-color: #122833;
+   align-items: center;
+    height: 50px;
+}
+
+#iconlove_cart {
+    display: flex;
+}
+.login, .signup {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #0e2b36;
+}
+.main {
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.content {
+    margin-top: 200px;
+    margin-left: 10%;
+    width: 600px;
+    font-size: 35px;
+}
+
+/* mau khi hover #f01543 */
+
+/* content  */
+.order {
+    margin-top: 80px;
+    background-color: white;
+    height: 100px;
+    border-radius: 10px;
+    width: 650px;
+    display: flex;
+    color: #f01543;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    
+}
+.delivery , .pickup , .inrestaurant{
+    padding: 13px;
+    border: 1px solid #f01543 ;
+    border-radius: 10px;
+}
+.content i {
+    font-size: 30px;
+}
+.content span{
+    font-size:  30px; ;
+}
+/* category */
+.foods {
+    margin: 60px 0px;
+    background-color: #fffefe;
+}
+.category {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.food {
+    padding: 20px 30px;
+    background-color: #f4f4f6;
+    width: 24%;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+}
+#quantity {
+    position: absolute;
+    top : 50px;
+    left: 100px;
+}
+.food p {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 17px;
+    margin-top:5px;
+    font-size: 25px;
+
+}
+.food i {
+    font-size: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.include {
+
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.include img {
+    width: 48%;
+    height: auto;
+}
+.foodlocation li {
+    margin: 5 3px ;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius:10px;
+}
+.foodlocation  {
+    
+    display: flex;
+    width: fit-content;
+    margin: 30px auto; 
+    border: 1px solid #fde8ed;
+    border-radius: 10px;
+}
+/* mau khi click #f01543 */
+.dish img {
+    width: 100%;
+    height: auto;
+}
+.dish {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}   
+.dishs {
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    gap: 20px;
+}
+#price {
+    margin-left: 20px;
+    font-size: 26px;
+    color: #f01543;
+}
+.container {
+    padding: 10px 15px;
+}
+.saleoff {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    top :10px; 
+    border-radius: 10px;
+    padding: 10px 12px;
+    right: 20px;
+    background-color: black;
+}
+.likefood {
+    position: absolute;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f01543;
+    border-radius: 50%;
+    top:10px ;
+    left: 10px;
+}
+#add {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px ;
+    border: 2px solid #efdbe1;
+    background-color: white;
+    border-radius: 10px;
+}
+.allfood {
+    margin-top: 30px;
+    text-align: center;
+}
+#browserall{
+    padding: 16px 26px;
+    background-color: #f01543;
+    border: 1px solid #f01543;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+}
+/* ----------------------------------------------------- */
+.processtobuy{
+    display: flex;
+    background-color: #000929;
+    color: white;
+    padding: 40px 0px;
+}
+.process {
+    margin-left: 60px;
+    
+}
+.process h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.processing {
+    margin-top: 10px;
+    
+}
+.box {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #161f3c;
+    width: 500px;
+    margin-top: 20px;
+    padding: 18px 22px;
+}
+.box span {
+    font-size: 30px;
+}
+.box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 24px;
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: #262e49;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 20px;
+    
+}
+.itemcontent {
+    padding: 15px ;
+}
+.itemcontent h3 {
+    font-size: 24px;
+}
+.itemcontent p {
+    font-size: 17px;
+    margin-top: 14px;
+}
+.item {
+    display: flex;
+    border-radius: 20px;    
+    margin-top: 30px;
+
+}
+.items img {
+   height: 220px;
+   width: auto;
+}
+#item_price {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.priceadd {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* ---------------------------- */
+.feedback {
+    margin: 50px 0px;
+    padding: 30px 0px;
+    background-color: #000929;
+    color: #ffffff;
+}
+.feedback h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 40px 0px;
+}
+.comments p {
+    color: #5b607a;
+}
+
+.comments {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 29%);
+    gap: 60px;
+}
+.personal{
+    margin-top: 40px;
+    display: flex;
+   
+}
+#avatar{
+    height: 100px;
+    width: auto;
+}
+.info {
+    margin: 10px 25px;
+}
+/* cau hoi thuong gap */
+.questions {
+    background-color: #f7f7f7;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 10px;
+}
+.question {
+    padding: 20px ;
+    border-radius: 10px;
+    width:80% ;
+    background-color: white;
+    margin-bottom: 20px;
+    position: relative;
+}
+.question i {
+    position: absolute;
+    top : 21px; 
+    right: 24px;
+}
+.question span {
+    font-size: 18px;
+}
+.nd {
+    display: none;
+}
+.question :hover #nd {
+    display: block;
+    background-color: #000929;
+}
