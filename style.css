@@ -586,7 +586,119 @@ a {
     background-color: #000929;
 }
 /* -------------------------------- */
-
-
-
-
+.download {
+    background: linear-gradient(to right, #8050c2, #685594,#7a2c67);
+    color: white;
+    margin-bottom: 40px;
+}
+.noidung {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(2,43%);
+    gap: 20px;
+}
+.appdownload {
+    padding: 50px 0px;
+}
+.appdownload h1 {
+    font-size: 43px;
+    margin-bottom: 30px;
+}
+.appdownload p {
+    padding-right:100px;
+    line-height: 1.7;
+    font-size: 19px;
+}
+.ggplay1  {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color:#ffffff ;
+    border-radius: 50px;
+    padding: 4px 16px;
+    color: #000929;
+    cursor: pointer;
+    width: 180px;
+    margin-right: 20px;
+}
+.ggplay2  {
+    cursor: pointer;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    background-color:#0b0a0f ;
+    border-radius: 50px;
+    padding: 4px 16px;
+    color: white;
+}
+.ggplay {
+    margin-top: 40px;
+    display: flex;
+}
+/*  --------------------------------------*/
+footer {
+    color: white;
+    padding: 50px 10%;
+    background-color: #050f2e;
+    display: flex;
+}
+.block1 {
+    margin-top: 4px;
+    font-size: large;
+    flex: 2;
+}
+.iconfooter {
+    color: #747681;
+    background-color: #19213e;
+    width: 30px;
+    display: grid;
+    place-items: center;
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.blockicon {
+    margin-top: 20px;
+    display: flex;
+}
+.block2 {
+    flex: 1;
+    line-height: 1.5;
+    font-size: large;
+}
+.block3 {
+    flex: 1.3;
+    line-height: 1.5;
+    font-size: large;
+}
+.block4 {
+    flex:1.8;
+    position: relative;
+}
+.fa-envelope {
+    position: absolute;
+    left: 23px;
+    top: 43px;
+}
+.block4 img {
+    margin-right: 5px;
+    margin-top: 20px;
+    cu
+}
+.block4 input[type="text"] {
+    padding: 12px 60px;
+    border-radius: 9px;
+    background-color: #323a54;
+    width: 240px;
+    border: 1px solid #323a54;
+}
+.block4 input[type ="submit"]{
+    background-color: #f01543;
+    padding: 14px 24px;
+    border-radius: 10px;
+    color: white;
+}
+footer a {
+    color: white;
+}
